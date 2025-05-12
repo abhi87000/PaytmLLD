@@ -82,6 +82,38 @@ public class agent {
         this.phoneNumber = phoneNumber;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public boolean isManager() {
+        return isManager;
+    }
+
+    public void setManager(boolean manager) {
+        isManager = manager;
+    }
+
+    public List<agent> getReportee() {
+        return reportee;
+    }
+
+    public void setReportee(List<agent> reportee) {
+        this.reportee = reportee;
+    }
+
+    public String getManagerId() {
+        return managerId;
+    }
+
+    public void setManagerId(String managerId) {
+        this.managerId = managerId;
+    }
+
     private agent(Builder builder)
     {
         this.id=builder.id;
